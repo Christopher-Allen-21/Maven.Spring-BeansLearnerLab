@@ -13,4 +13,12 @@ public class Classroom {
     public void hostLecture(Teacher teacher, double numberOfHours){
         teacher.lecture(students.findAll(), numberOfHours);
     }
+
+    public Students getStudents(){
+        return students;
+    }
+
+    public Instructors getInstructors(){
+        return instructors;
+    }
 }
