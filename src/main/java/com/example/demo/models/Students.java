@@ -9,6 +9,13 @@ public class Students extends People<Student>{
         super(personList);
     }
 
-
+    @Override
+    public String toString(){
+        String returnString = "";
+        for(Student s : this.findAll()){
+            returnString += "\nId: "+s.getId()+"\tName: "+s.getName();
+        }
+        return returnString;
+    }
 
 }

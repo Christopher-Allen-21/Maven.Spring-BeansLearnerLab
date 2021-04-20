@@ -11,6 +11,12 @@ public class ClassroomConfig {
     InstructorConfig instructorConfig;
     StudentConfig studentConfig;
 
+    @Autowired
+    public ClassroomConfig(InstructorConfig instructorConfig,StudentConfig studentConfig){
+        this.instructorConfig = instructorConfig;
+        this.studentConfig = studentConfig;
+    }
+
     @Bean(name = "currentCohort")
     public Classroom currentCohort(){
         return new Classroom(instructorConfig.zcwInstructors(),studentConfig.currentStudents());

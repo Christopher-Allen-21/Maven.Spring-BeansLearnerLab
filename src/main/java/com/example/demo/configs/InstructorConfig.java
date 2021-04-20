@@ -15,12 +15,22 @@ public class InstructorConfig {
 
     @Bean(name = "tcUsaInstructors")
     public Instructors tcUsaInstructors(){
-        return null;
+        List<Instructor> instructorList = new ArrayList<>();
+        Instructor ph1 = new Instructor(1l,"US Placeholder 1"); instructorList.add(ph1);
+        Instructor ph2 = new Instructor(2l,"US Placeholder 2"); instructorList.add(ph2);
+        Instructor ph3 = new Instructor(3l,"US Placeholder 3"); instructorList.add(ph3);
+
+        return new Instructors(instructorList);
     }
 
     @Bean(name = "tcUkInstructors")
     public Instructors tcUkInstructors(){
-        return null;
+        List<Instructor> instructorList = new ArrayList<>();
+        Instructor ph1 = new Instructor(1l,"UK Placeholder 1"); instructorList.add(ph1);
+        Instructor ph2 = new Instructor(2l,"UK Placeholder 2"); instructorList.add(ph2);
+        Instructor ph3 = new Instructor(3l,"UK Placeholder 3"); instructorList.add(ph3);
+
+        return new Instructors(instructorList);
     }
 
     @Bean(name = "instructors")
