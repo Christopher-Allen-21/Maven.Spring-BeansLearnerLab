@@ -39,8 +39,8 @@ public class StudentConfig {
         Student placeHolder1 = new Student(1l,"Placeholder 1"); studentList.add(placeHolder1);
         Student placeHolder2 = new Student(2l,"Placeholder 2"); studentList.add(placeHolder2);
         Student placeHolder3 = new Student(3l,"Placeholder 3"); studentList.add(placeHolder3);
-        Student placeHolder4 = new Student(4l,"Placeholder 4"); studentList.add(placeHolder4);
-        Student placeHolder5 = new Student(5l,"Placeholder 5"); studentList.add(placeHolder5);
+//        Student placeHolder4 = new Student(4l,"Placeholder 4"); studentList.add(placeHolder4);
+//        Student placeHolder5 = new Student(5l,"Placeholder 5"); studentList.add(placeHolder5);
 
         return new Students(studentList);
     }
