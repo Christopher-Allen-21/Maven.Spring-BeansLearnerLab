@@ -1,6 +1,5 @@
 package com.example.demo.models;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class Students extends People<Student>{
